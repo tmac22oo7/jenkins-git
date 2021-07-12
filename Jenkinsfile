@@ -1,13 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage ('Build') {
+    stage ("HELLO") {
       steps {
-      sh 'echo "HELLO WORLD"'
-      sh '''
-        echo "This will list current dir content"
-        ls -lh
-        '''
+      echo "HELLO WORLD"
       }
     }
   }
