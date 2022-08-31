@@ -10,5 +10,14 @@ pipeline {
         '''
       }
     }
+    stage ('Test') {
+      steps {
+      sh 'echo "HELLO TEST"'
+      sh '''
+        echo "This will list current dir"
+        pwd
+        '''
+      }
+    }
   }
 } 
